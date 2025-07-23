@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-family-bangers: 'Bangers', cursive;
+  --font-family-poppins: 'Poppins', sans-serif;
+  --font-family-roboto-flex: 'Roboto Flex', sans-serif;
+}
+@theme {
+  --color-feastwhite: #ffffff;
+  --color-feastoffwhite: #FAF7F2;
+
+  --color-feastdark: #3A261C;         /* Slightly lighter, richer brown than #2C1B13 */
+  --color-feastdarker: #2C1B13;       /* Original rich chocolate base */
+
+  --color-feastpurple: #6C2BD9;
+  --color-feastlavender: #D4B1FF;     /* Light purple for soft backgrounds or highlights */
+
+  --color-feastblue: #00E0FF;
+  --color-feastsky: #B8F3FF;          /* Soft pastel blue for light sections */
+
+  --color-feastyellow: #FFD600;
+  --color-feastgold: #FFEB7F;         /* Warm gold tone for subtle accents */
+
+  --color-feastmint: #A1F7B0;
+  --color-feastgreen: #67DCA3;        /* Slightly deeper green for contrast or buttons */
+
+  --color-feastpink: #FF4F87;
+  --color-feastrose: #FFC5D5;         /* Light rosy-pink for soft accents or backgrounds */
+
+  --color-feastorange: #FF6A00;
+  --color-feastpeach: #FFB27F;        /* Softer peach tone for hover states or backgrounds */
+
+  --color-feastshadow: rgba(0, 0, 0, 0.2);   /* Soft shadow for UI elevation */
+  }
+
+  /* Hide scrollbar for all */
+::-webkit-scrollbar {
+  display: none;
+}
+/* body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
