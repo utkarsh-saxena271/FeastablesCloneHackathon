@@ -1,12 +1,39 @@
-# React + Vite
+🍫 Feastables – MrBeast-Inspired Funky Chocolate Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Just wrapped up my submission for the Sheryians Frontend Hackathon 2025 — and it’s as wild as it sounds!
 
-Currently, two official plugins are available:
+This project is a Feastables-style chocolate shop built with all the frontend magic I could throw in: animations, 3D models, smooth scrolling, and a UI that pops.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Demo: https://feastable-h.netlify.app/
 
-## Expanding the ESLint configuration
+⸻
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Tech Used
+	•	React + Vite
+	•	Tailwind CSS
+	•	GSAP
+	•	Framer Motion
+	•	@react-three/fiber + drei
+	•	Lenis (smooth scroll)
+	•	Context API
+
+⸻
+
+✨ Features
+	•	Feastables-style chocolate products with bold branding
+	•	Smooth scroll & animated transitions using Lenis + GSAP
+	•	3D animated Crunch Bar that moves with your cursor
+	•	Framer Motion microinteractions
+	•	Fully responsive design
+	•	No prop drilling (Context API for global state)
+
+⸻
+
+📚 What I Learned
+	•	Working with 3D in React with Three.js
+	•	Combining GSAP and Framer Motion
+	•	Context-based state management
+	•	Performance optimization for animations
+	•	How to make the UI feel fun and interactive
+
+⸻
