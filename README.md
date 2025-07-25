@@ -4,7 +4,7 @@ Just wrapped up my submission for the Sheryians Frontend Hackathon 2025 — and 
 
 This project is a Feastables-style chocolate shop built with all the frontend magic I could throw in: animations, 3D models, smooth scrolling, and a UI that pops.
 
-🔗 Live Demo: https://feastable-h.netlify.app/
+🔗 Live Demo: [https://feastable-h.netlify.app/](https://feastables-hktn.netlify.app/)
 
 ⸻
 
