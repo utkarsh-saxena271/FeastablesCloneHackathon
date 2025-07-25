@@ -46,7 +46,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen w-screen bg-feastrose text-black">
+    <div className="flex flex-col min-h-screen w-screen bg-feastrose text-black overflow-hidden">
       <CustomCursor color="#ff9900" />
       <Nav />
 
