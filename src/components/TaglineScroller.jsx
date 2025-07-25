@@ -32,7 +32,7 @@ export default function TaglineScroller() {
   return (
     <div
       ref={containerRef}
-      className="cursor-hover-target relative w-full h-[100vh] overflow-hidden bg-feastdarker flex items-center px-10 border-t-10 border-b-10 border-feastyellow"
+      className="cursor-hover-target relative w-full h-[100vh] overflow-hidden bg-feastdarker flex items-center px-10 border-t-10 border-b-10 border-feastyellow my-5"
       data-cursor-size="60"
     >
       <h1

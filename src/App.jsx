@@ -1,18 +1,20 @@
 import React, { useEffect } from "react";
-import MainRoutes from "./routes/MainRoutes";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
-
-// Lenis + GSAP
+import Hero from "./components/Hero";
+import ScrollVelocity from "./components/ScrollVelocity";
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TaglineScroller from "./components/TaglineScroller";
+import OurStory from "./components/OurStory";
+import OurProducts from "./components/OurProducts";
 
-// Register ScrollTrigger plugin
+// Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
 
-// Optional: optimize ScrollTrigger behavior
+// ScrollTrigger configuration
 ScrollTrigger.config({
   ignoreMobileResize: true,
   autoRefreshEvents: "DOMContentLoaded,load,visibilitychange",
@@ -21,23 +23,21 @@ ScrollTrigger.config({
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2, // Slower = smoother scroll
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
-      smoothTouch: false, // Optional: disables smooth on mobile
+      smoothTouch: false,
     });
 
-    // Sync Lenis with ScrollTrigger
     lenis.on("scroll", ScrollTrigger.update);
 
-    // Animate Lenis with GSAP ticker
     const raf = (time) => {
-      lenis.raf(time * 1000); // Convert GSAP time (s) to Lenis (ms)
+      lenis.raf(time * 1000);
     };
 
     gsap.ticker.add(raf);
-    gsap.ticker.lagSmoothing(0); // Prevent delay in animation
-    ScrollTrigger.refresh(); // Recalculate trigger positions
+    gsap.ticker.lagSmoothing(0);
+    ScrollTrigger.refresh();
 
     return () => {
       gsap.ticker.remove(raf);
@@ -46,12 +46,37 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen w-full bg-feastoffwhite text-black">
+    <div className="flex flex-col min-h-screen w-screen bg-feastrose text-black">
       <CustomCursor color="#ff9900" />
       <Nav />
-      <main className="flex-1">
-        <MainRoutes />
-      </main>
+
+      <section id="hero">
+        <Hero />
+      </section>
+
+      <div>
+        <TaglineScroller />
+      </div>
+
+      <section id="ourstory">
+        <OurStory />
+      </section>
+
+      <section className="py-1 bg-feastmint border-y-8 rounded-2xl border-feastorange overflow-hidden">
+  <ScrollVelocity
+    texts={[
+      "Dive into the Feast",
+      "Scroll to discover our boldest flavors yet"
+    ]}
+    velocity={100}
+    className="text-5xl sm:text-6xl md:text-7xl font-bold text-feastorange uppercase tracking-wider whitespace-nowrap py-2"
+  />
+</section>
+
+      <section id="products">
+        <OurProducts />
+      </section>
+
       <Footer />
     </div>
   );
