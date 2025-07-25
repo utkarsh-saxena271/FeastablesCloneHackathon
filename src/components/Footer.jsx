@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full  bg-feastdark text-white px-6 md:px-20 py-12 border-t-10 rounded-3xl border-t-feastwhite">
+    <footer className="w-full  bg-feastdark text-white px-6 md:px-20 py-12 border-t-10 rounded-3xl border-t-feastgreen">
       <div className="flex flex-col md:flex-row justify-between gap-12">
         {/* Brand & Description */}
         <div className="flex-1">

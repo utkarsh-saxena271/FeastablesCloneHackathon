@@ -8,47 +8,46 @@ const products = [
   {
     id: 1,
     name: "Milk Chocolate",
-    description: "Smooth and creamy milk chocolate with a touch of sea salt.",
+    description: "Classic silky-smooth milk chocolate that melts in your mouth.",
     price: 129,
     image: new URL("../assets/products/MilkChocolate.webp", import.meta.url).href,
   },
   {
     id: 2,
     name: "Dark Chocolate",
-    description: "Rich 70% cacao dark chocolate with roasted almonds.",
+    description: "Bold and rich 70% dark chocolate for true cacao lovers.",
     price: 149,
     image: new URL("../assets/products/DarkChocolate.webp", import.meta.url).href,
   },
   {
     id: 3,
     name: "Peanut Butter Chocolate",
-    description: "Crunchy peanut butter swirled with sweet milk chocolate.",
+    description: "A heavenly combo of creamy peanut butter and sweet milk chocolate.",
     price: 159,
     image: new URL("../assets/products/PeanutButter.webp", import.meta.url).href,
   },
   {
     id: 4,
     name: "Dark Chocolate Sea Salt",
-    description: "Hazelnuts and crispy rice wrapped in milk chocolate.",
+    description: "Intense dark chocolate balanced perfectly with a hint of sea salt.",
     price: 169,
     image: new URL("../assets/products/DarkChocolateSeaSalt.webp", import.meta.url).href,
   },
   {
     id: 5,
     name: "Milk Crunch",
-    description: "Golden caramel and sea salt in rich chocolate.",
+    description: "Smooth milk chocolate loaded with crunchy, golden crisped rice.",
     price: 179,
     image: new URL("../assets/products/MilkCrunch.webp", import.meta.url).href,
   },
   {
     id: 6,
     name: "Almond Bar",
-    description: "Toasted coconut shreds inside creamy milk chocolate.",
+    description: "Roasted almonds enveloped in luscious milk chocolate for the perfect bite.",
     price: 139,
     image: new URL("../assets/products/Almonds.webp", import.meta.url).href,
   },
 ];
-
 // Provider
 export const ProductsContext = ({ children }) => {
   return (

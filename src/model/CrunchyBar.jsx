@@ -33,26 +33,25 @@ const Model = ({ mouse, scale }) => {
         z: 0,
         duration: 1.5,
         ease: "cubic-bezier(0.19, 1, 0.22, 1)",
-        delay: 0.5,
+        delay: 0, 
       });
-
+  
       // Rotation animation
       gsap.from(modelRef.current.rotation, {
         x: modelRef.current.rotation.x - Math.PI,
         y: modelRef.current.rotation.y - Math.PI / 2,
         duration: 1.5,
         ease: "cubic-bezier(0.19, 1, 0.22, 1)",
-        delay: 0.5,
+        delay: 0,
       });
-
-      // Optional: opacity animation
+  
       modelRef.current.traverse((child) => {
         if (child.isMesh && child.material) {
           child.material.transparent = true;
           gsap.from(child.material, {
             opacity: 0,
             duration: 1.5,
-            delay: 0.5,
+            delay: 0,
             ease: "power2.out",
           });
         }
