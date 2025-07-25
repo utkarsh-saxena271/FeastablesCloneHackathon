@@ -7,40 +7,21 @@ import TaglineScroller from "../components/TaglineScroller";
 
 
 
+
 const Home = () => {
   return (
     <div className="pt-22">
       <div className="flex flex-col items-center justify-center min-h-screen w-screen bg-feastoffwhite text-black px-2  overflow-x-hidden">
-        {/* HERO SECTION */}
         <Hero />
-        {/* SCROLL VELOCITY */}
         <ScrollVelocity
           texts={["On a mission to sweeten lives — from farmers to your table"]}
           velocity={100}
-          className="text-4xl font-family-bangers tracking-widest font-thin bg-feastmint text-feastorange border-t-5 border-b-5 border-feastorange sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
+          className="text-6xl font-family-bangers tracking-widest font-thin bg-feastmint text-feastorange border-t-5 border-b-5 border-feastorange sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
         />
         <HowItWorks />
       </div>
-       {/* TAGLINE SCROLLER */}
-       <TaglineScroller/>
-       
-
-      {/* <div className="h-[30vh] text-feastpurple bg-feastblue flex items-center justify-center">
-        <CurvedLoop
-          marqueeText="Be ✦ Creative ✦ With ✦ React ✦ Bits ✦ "
-          speed={3}
-          curveAmount={100}
-          direction="right"
-          interactive={true}
-          className="fill-feastwhite"
-        />
-      </div> */}
-
-      
-     
-       
-        <div className="flex flex-col  justify-center min-h-screen w-screen bg-feastoffwhite text-black px-2  overflow-x-hidden">
-      {/* IMPACT SECTION */}
+       <TaglineScroller/> 
+       <div className="flex flex-col justify-center min-h-screen w-screen bg-feastoffwhite text-black px-2  overflow-x-hidden">
       <OurImpact />
       
       </div>

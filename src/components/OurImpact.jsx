@@ -56,7 +56,7 @@ export default function OurImpact() {
         start: "top 60%",
         end: "top 40%",
         scrub: 1,
-        markers: true,
+        // markers: true,
       },
       opacity: 0,
       letterSpacing: "0.5em",
@@ -69,11 +69,11 @@ export default function OurImpact() {
   }, []);
 
   return (
-    <section className="w-[full] bg-feastmint text-feastdark py-16 px-6 mt-4 border-feastgreen border-t-10 border-b-10 rounded-2xl">
+    <section className="w-[full] min-h-[80vh] flex items-center bg-feastmint text-feastdark py-16 px-6 border-feastgreen border-t-10 border-b-10 rounded-2xl">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <h2
           ref={headingref}
-          className="text-3xl sm:text-4xl md:text-5xl font-family-bangers mb-12 text-center"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-family-bangers mb-15 text-center"
         >
           Our Impact
         </h2>
@@ -82,7 +82,7 @@ export default function OurImpact() {
           {stats.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col items-center justify-center p-4 rounded-xl bg-feastoffwhite shadow-[0_0_30px_0px] shadow-feastdarker text-center"
+              className="flex flex-col items-center justify-center p-4 rounded-xl bg-feastoffwhite shadow-[0_0_30px_0px] shadow-feastdarker text-center mb-10 mt-5"
               ref={el => (cardref.current[i] = el)}
             >
               <div className="text-feastpurple mb-2">{item.icon}</div>
@@ -92,7 +92,7 @@ export default function OurImpact() {
           ))}
         </div>
 
-        <p ref={textRef} className="max-w-3xl text-center text-lg sm:text-xl text-feastdarker">
+        <p ref={textRef} className="max-w-3xl text-center text-lg sm:text-xl text-feastdarker mt-5">
           Every chocolate bar you buy helps fund education, improve farming tools, and create sustainable income for cocoa farmers — while keeping it deliciously ethical for you 🍫❤️
         </p>
       </div>
